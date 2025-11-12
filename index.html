@@ -5,9 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .code-category {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <h1>API Response Practice</h1>
+    <h2>Common HTTP Response Status Codes</h2>
+    <p>Table displaying common HTTP status codes.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Status Code</th>
+                <th>Meaning</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3" class="code-category">1xx Informational responses</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>Continue</td>
+                <td>Informational</td>
+            </tr>
+            
+            <tr>
+                <td colspan="3" class="code-category">2xx Success</td>
+            </tr>
+            <tr>
+                <td><strong>200</strong></td>
+                <td><strong>OK</strong></td>
+                <td>Success</td>
+            </tr>
+            <tr>
+                <td>201</td>
+                <td>Created</td>
+                <td>Success</td>
+            </tr>
+            <tr>
+                <td>204</td>
+                <td>No Content</td>
+                <td>Success</td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="code-category">3xx Redirection</td>
+            </tr>
+            <tr>
+                <td>301</td>
+                <td>Moved Permanently</td>
+                <td>Redirection</td>
+            </tr>
+            <tr>
+                <td>302</td>
+                <td>Found (Moved Temporarily)</td>
+                <td>Redirection</td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="code-category">4xx Client errors</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>Bad Request</td>
+                <td>Client Error</td>
+            </tr>
+            <tr>
+                <td>401</td>
+                <td>Unauthorized</td>
+                <td>Client Error</td>
+            </tr>
+            <tr>
+                <td>403</td>
+                <td>Forbidden</td>
+                <td>Client Error</td>
+            </tr>
+            <tr>
+                <td>404</td>
+                <td>Not Found</td>
+                <td>Client Error</td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="code-category">5xx Server errors</td>
+            </tr>
+            <tr>
+                <td>500</td>
+                <td>Internal Server Error</td>
+                <td>Server Error</td>
+            </tr>
+            <tr>
+                <td>503</td>
+                <td>Service Unavailable</td>
+                <td>Server Error</td>
+            </tr>
+        </tbody>
+    </table>
     <script src="script.js"></script>
 </body>
 </html>
