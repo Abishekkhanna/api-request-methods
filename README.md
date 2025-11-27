@@ -4,7 +4,8 @@ A simple repository demonstrating different HTTP request methods (GET, POST, PUT
 
 ## 📂 Repository Structure
 
-/ ├── index.html       ← Main HTML file demonstrating API methods └── script.js        ← JavaScript implementing API request logic
+/ ├── index.html       ← Main HTML file demonstrating API methods 
+  └── script.js        ← JavaScript implementing API request logic
 
 ## ✅ What’s Included
 
